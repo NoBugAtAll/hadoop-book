@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-for year in ~/hadoop-book/input/ncdc/all/*
+for year in ../../../../input/ncdc/all/*
 do
   echo -ne `basename $year .gz`"\t"
   gunzip -c $year | \
